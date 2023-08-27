@@ -14,8 +14,8 @@ const createUser = async (req: Request, res: Response) => {
 
 // Get Singel User
 const singelUser = async (req: Request, res: Response) => {
-  const id = req.params.id;
-  const result = await UserService.getSingelUser(id);
+  const email = req.params.email;
+  const result = await UserService.getSingelUser(email);
 
   res.send({
     message: "success",

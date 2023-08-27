@@ -8,8 +8,8 @@ const createUser = async (data: IUser): Promise<IUser> => {
 };
 
 // Get Singel User
-const getSingelUser = async (id: string): Promise<IUser | null> => {
-  const result = await UserModel.findById(id);
+const getSingelUser = async (email: string): Promise<IUser | null> => {
+  const result = await UserModel.findOne({ email: email });
   return result;
 };
 

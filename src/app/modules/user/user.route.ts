@@ -7,6 +7,6 @@ const router = express.Router();
 router.post("/create-user", userController.createUser);
 
 // Get Singel User
-router.get("/user/:id", userController.singelUser);
+router.get("/user/:email", userController.singelUser);
 
 export const userRouter = router;
