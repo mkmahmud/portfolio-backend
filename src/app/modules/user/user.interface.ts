@@ -7,6 +7,18 @@ export interface IUser {
   userTitles: [string];
   githubLink: string;
   linkedinLink: string;
+  shortTechnologies: [
+    {
+      img: string;
+      name: string;
+    },
+  ];
+  sideSkills: [
+    {
+      skillsTitle: string;
+      details: string;
+    },
+  ];
   githubUserName: string;
   userImage: string;
   aboutMe: [string];

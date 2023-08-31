@@ -18,6 +18,12 @@ const userSchema = new Schema<IUser>({
     type: [String],
     required: true,
   },
+  shortTechnologies: {
+    type: [Object],
+  },
+  sideSkills: {
+    type: [Object],
+  },
   githubLink: {
     type: String,
     required: true,
